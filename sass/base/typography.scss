@@ -1,0 +1,18 @@
+.heading-primary {
+    color: white;
+    margin-bottom: 2.5rem;
+    font-weight: 400;
+
+    &--main{
+        font-size: 7rem;
+        text-transform: uppercase;
+        letter-spacing: .2rem;
+        display: block;
+    }
+
+    &__sub {
+        display: block;
+        font-family: "satisfy", serif;
+        font-size: 2.6rem;
+    }
+}

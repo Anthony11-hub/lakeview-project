@@ -1,0 +1,42 @@
+.row {
+    width: 114rem;
+    
+    margin: 0 auto;
+    margin-top: $vertical-gutter;
+    // background-color: $primary-light;
+    // height: 5rem;
+
+    @include clearfix;
+
+    [class*="col-"]{
+        background-color: $primary-light;
+        height: 5rem;
+        float: left;
+        &:not(:last-child) {
+            margin-right:$horizontal-gutter;
+        }
+    }
+
+    .col-1-of-2 {
+        width: calc((100% - #{$horizontal-gutter}) / 2); // needs to be definied with #
+    }
+
+    .col-1-of-3 {
+        width: calc((100% - 2* #{$horizontal-gutter}) / 3); // needs to be definied with #
+        
+    }
+
+    .col-2-of-3 {
+        width: calc(2*((100% - 2* #{$horizontal-gutter}) / 3) + #{$horizontal-gutter}); // needs to be definied with #
+        
+    }
+
+    .col-1-of-4 {
+        width: calc((100% - 3* #{$horizontal-gutter}) / 4); // needs to be definied with #
+    }
+
+    .col-2-of-4 {
+        width: calc(2*((100% - 3* #{$horizontal-gutter}) / 4) + #{$horizontal-gutter} ); // needs to be definied with #
+        
+    }
+}

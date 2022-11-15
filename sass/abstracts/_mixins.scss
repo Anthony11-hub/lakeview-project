@@ -1,0 +1,13 @@
+@mixin center-object {
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@mixin clearfix {//really important to prevent the grid from messing up
+    &::after{
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
