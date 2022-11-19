@@ -16,4 +16,12 @@
   font-family: "satisfy", serif;
   font-size: 2.6rem;
 }
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: -webkit-gradient(linear, left top, right top, );
+  background-image: linear-gradient(to right);
+}
 /*# sourceMappingURL=typography.css.map */
