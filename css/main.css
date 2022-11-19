@@ -414,4 +414,49 @@ body {
 .u-margin-bottom-small {
   margin-bottom: 1.5rem;
 }
+
+.composition {
+  position: relative;
+  margin-left: 5rem;
+}
+
+.composition__img {
+  width: 45%;
+  -webkit-box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
+  position: absolute;
+  z-index: 10;
+  outline-offset: 2rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}
+
+.composition__img--1 {
+  left: -2rem;
+  top: -2rem;
+}
+
+.composition__img--2 {
+  left: 6rem;
+  top: 6rem;
+}
+
+.composition__img--3 {
+  left: 15rem;
+  top: 15rem;
+}
+
+.composition__img:hover {
+  -webkit-transform: scale(1.05) translateY(-0.5rem);
+          transform: scale(1.05) translateY(-0.5rem);
+  z-index: 20;
+  -webkit-box-shadow: 0 1.7rem 5rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 1.7rem 5rem rgba(0, 0, 0, 0.4);
+  outline: 1.5rem solid #4f612a;
+}
+
+.composition__img:hover .composition__img:__img:not(:hover) {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
 /*# sourceMappingURL=main.css.map */
